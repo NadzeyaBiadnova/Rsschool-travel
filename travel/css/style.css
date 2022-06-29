@@ -84,6 +84,10 @@
 }
 
 html {
+    scroll-behavior: smooth;
+}
+
+.container {
     box-sizing: border-box;
     max-width: 1440px;
     margin: 0 auto;
@@ -95,21 +99,15 @@ html {
     box-sizing: inherit;
 }
 
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-} 
-
 .rectangle_26 {
     /* Rectangle 26 */
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-
+    align-items: center;
 
     /* position: absolute; */
-    width: 1440px;
+    /* width: 1440px; */
     height: 90px;
     left: 0px;
     top: 0px;
@@ -140,7 +138,7 @@ html {
     right: 89.58%;
     top: 0.7%;
     bottom: 98.5%;
-    
+
     /* background: #FFFFFF; */
 }
 
@@ -162,134 +160,68 @@ html {
     color: #FFFFFF;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .navigation {
     /* Auto layout */
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     padding: 0px;
     gap: 42px;
+    list-style: none;
+    transition: .3s;
+    list-style-type: none;
 
-    position: absolute;
+    /* position: absolute; */
     width: 527px;
     height: 21px;
     left: 494px;
     top: 35px;
 }
 
-
-.header_list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .nav_item {
     text-decoration: none;
     margin-right: 42px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
 }
 
-.nav_item: :last-child {
+.nav-item:hover {
+    color: black;
+}
+
+.nav_item:last-child {
     margin-right: 0px;
 }
 
-.How_It_Works {
-    /* How It Works */
-    width: 98px;
-    height: 21px;
-
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-
-    color: #FFFFFF;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.Plan_Your_Trip {
-    /* Plan Your Trip */
-    width: 105px;
-    height: 21px;
-
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-
-    color: #FFFFFF;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.Destinations {
-    /* Destinations */
-
-    width: 95px;
-    height: 21px;
-
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-
-    color: #FFFFFF;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-}
-
-.Travel_Stories {
-    /* Travel Stories */
-    width: 103px;
-    height: 21px;
-
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-
-    color: #FFFFFF;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-}
-
 .Frame_1 {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 229px;
-    gap: 10px;
-
-    position: absolute;
     width: 103px;
     height: 41px;
     left: 1217px;
     top: 25px;
+    margin-right: 120px;
 
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .Login {
@@ -303,10 +235,125 @@ html {
     line-height: 21px;
 
     color: #FFFFFF;
+}
 
-    /* Inside auto layout */
+.main {
+    background-image: url('../img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg');
+    background-color: #E5E5E5;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.plan_your_trip {
+    width: 892px;
+    height: 422px;
+    margin-left: 248px;
+    margin-right: 300px;
+    margin-top: 0px;
+
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+
+    color: #FFFFFF;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.explore {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+
+    color: #FFFFFF;
+}
+
+.receive {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+}
+
+.search {
+
+    width: 892px;
+    height: 95px;
+    left: 248px;
+    top: 454px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.rectang {
+    width: 892px;
+    height: 95px;
+    left: 248px;
+    top: 454px;
+
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+
+.steps {
+    width: 1177px;
+    height: 247px;
+    left: 131px;
+    top: 845px;
+    margin-top: 343px;
+    margin-left: 131px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.h2_steps {
+    width: 611px;
+    height: 53px;
+    left: calc(50% - 611px/2);
+    top: calc(50% - 53px/2 - 97px);
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    /* identical to box height */
+    color: #F2785C;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    width: 140.96px;
+    height: 33.65px;
+    margin-right: 121px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
 }
