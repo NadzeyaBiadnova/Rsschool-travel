@@ -1,0 +1,359 @@
+/* red-hat-text-regular - latin */
+@font-face {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/red-hat-text-v11-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/red-hat-text-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* red-hat-text-500 - latin */
+@font-face {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/red-hat-text-v11-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/red-hat-text-v11-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* magra-regular - latin */
+@font-face {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/magra-v14-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/magra-v14-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* magra-700 - latin */
+@font-face {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/magra-v14-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/magra-v14-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* aleo-regular - latin */
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/aleo-v11-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/aleo-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-italic - latin */
+@font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/aleo-v11-latin-italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/aleo-v11-latin-italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-700 - latin */
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/aleo-v11-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/aleo-v11-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.rectangle_26 {
+    /* Rectangle 26 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* position: absolute; */
+    /* width: 1440px; */
+    height: 90px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.logo {
+    /* logo */
+    /* position: absolute; */
+    width: 216px;
+    height: 31px;
+    left: 120px;
+    top: 25px;
+    margin-left: 120px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.vector {
+    /* Vector */
+    /* position: absolute; */
+    left: 8.33%;
+    right: 89.58%;
+    top: 0.7%;
+    bottom: 98.5%;
+
+    /* background: #FFFFFF; */
+}
+
+.travel_portal {
+    /* Travel Portal */
+    /* position: absolute; */
+    width: 180px;
+    height: 31px;
+    left: 156px;
+    top: 25px;
+
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navigation {
+    /* Auto layout */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 42px;
+    list-style: none;
+    transition: .3s;
+    list-style-type: none;
+
+    /* position: absolute; */
+    width: 527px;
+    height: 21px;
+    left: 494px;
+    top: 35px;
+}
+
+.nav_item {
+    text-decoration: none;
+    margin-right: 42px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+.nav_item:last-child {
+    margin-right: 0px;
+}
+
+.Frame_1 {
+    width: 103px;
+    height: 41px;
+    left: 1217px;
+    top: 25px;
+    margin-right: 120px;
+
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login {
+    width: 43px;
+    height: 21px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.main {
+    background-image: url('../img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg');
+    background-color: #E5E5E5;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.plan_your_trip {
+    width: 892px;
+    height: 422px;
+    margin-left: 248px;
+    margin-right: 300px;
+    margin-top: 0px;
+
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+
+    color: #FFFFFF;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.explore {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+
+    color: #FFFFFF;
+}
+
+.receive {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+}
+
+.search {
+
+    width: 892px;
+    height: 95px;
+    left: 248px;
+    top: 454px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.rectang {
+    width: 892px;
+    height: 95px;
+    left: 248px;
+    top: 454px;
+
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+
+.steps {
+    width: 1177px;
+    height: 247px;
+    left: 131px;
+    top: 845px;
+    margin-top: 343px;
+    margin-left: 131px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.h2_steps {
+    width: 611px;
+    height: 53px;
+    left: calc(50% - 611px/2);
+    top: calc(50% - 53px/2 - 97px);
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    /* identical to box height */
+    color: #F2785C;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    width: 140.96px;
+    height: 33.65px;
+    margin-right: 121px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
